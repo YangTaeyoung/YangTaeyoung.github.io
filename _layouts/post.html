@@ -1,0 +1,66 @@
+---
+layout: default
+---
+<article class="post">
+    {%- if page.image -%}
+    <div class="featuredImage">
+        <img src="{{ '/assets/img/' | append: page.image }}" alt=""/>
+    </div>
+    {%- endif -%}
+    <header>
+        <h1 class="postTitle">{{ page.title }}</h1>
+        <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span>
+            Minute Read</p>
+        <p class="meta">
+            {%- if page.tags -%}
+            {%- for tag in page.tags -%}
+            {%- if site.data.tags contains tag -%}
+            <a class="btn btn-outline-success">{{ site.data.format[tag] }}</a> &nbsp;
+            {%- endif -%}
+            {%- endfor -%}
+            {%- endif -%}
+        </p>
+    </header>
+
+    {{ content }}
+
+    <!-- 조회수 출력 부분-->
+    <div style="text-align: center;">
+        <a href="https://hits.seeyoufarm.com">
+            <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}&count_bg=%231E3772&title_bg=%230E142D&icon=spring.svg&icon_color=%23E7E7E7&title=%EC%A1%B0%ED%9A%8C%EC%88%98&edge_flat=false"/>
+        </a>
+    </div>
+    <!-- 깃헙 이슈를 활용한 덧글란 -->
+    <script src="https://utteranc.es/client.js"
+            repo="YangTaeyoung/YangTaeyoung.github.io"
+            issue-term="pathname"
+            label="comments"
+            theme="github-dark"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <!-- POST NAVIGATION -->
+    <footer class="postNav clearfix">
+        {%- if page.previous.url -%}
+        <a class="prev{% if page.previous.image %} image{% endif %}" href="{{ page.previous.url }}"><span>&laquo;&nbsp;{{ page.previous.title }}</span>
+            {%- if page.previous.image -%}
+            <img src="{{ '/assets/img/' |  append: page.previous.image }}" alt="">
+            {%- endif -%}
+        </a>
+        {%- endif -%}
+        {%- if page.next.url -%}
+        <a class="next{% if page.next.image %} image{% endif %}" href="{{ page.next.url }}"><span>{{ page.next.title }}&nbsp;&raquo;</span>
+            {%- if page.next.image -%}
+            <img src="{{ '/assets/img/' | append: page.next.image }}" alt="">
+            {%- endif -%}
+        </a>
+        {%- endif -%}
+    </footer>
+</article>
+
+
+
+<!-- 사용하지 않는 덧글 기능 (disqus) -->
+<!--{%- if site.disqus.shortname -%}-->
+<!--  {%- include disqus_comments.html -%}-->
+<!--{%- endif -%}-->

@@ -1,0 +1,32 @@
+title: 코딩하는 나날
+description: 태영짱의 코딩일기장입니다.
+
+url: https://yangtaeyoung.github.io
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+# Header Option
+# header: large
+
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
+future: true
+
+navigation:
+  - title: Home
+    url: /index.html
+  - title: About
+    url: /about
+#  - title: Contact
+#    url: /contact
+
+social:
+  github: YangTaeyoung
+  facebook: Yangtaeyoung
+  email: 0130yang@gmail.com
+
+google_analytics: "UA-220999823-1"
+#disqus:
+#  shortname: yangtaeyoung-github-io-2.disqus.com
