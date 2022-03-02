@@ -15,11 +15,9 @@ tags: [python]
 바로 배열의 초기화와 요소 변경에 대한 문제입니다.
 <br>
 저는 2차원 배열을 동일한 요소로 파이썬 배열을 초기화 하는데 이런 식으로 초기화를 진행했습니다.
-<br>
 {%- highlight python -%}
 two_arr = [[False] * 1] * 5
 {%- endhighlight -%}
-<br>
 이렇게 한 후 출력 결과를 살펴보면
 <br>
 `[False], [False], [False], [False], [False]]`
@@ -55,14 +53,11 @@ two_arr[0][0] = True
 그래서 실제로 의도한 바와 같이 배열을 초기화하기 위해서는 for문을 통해 배열을 직접 초기화해주어야 합니다.
 <br>
 해당 과정속에서는 이렇게 append 함수를 통해서 추가해주거나,
-
 {%- highlight python -%}
 two_arr = []
 for _ in range(5):
   two_arr([False] * 5)
 {%- endhighlight -%}
-
-<br>
 아래와 같이 리스트 컴프리핸션(list_comprehension)을 이용할 수 있습니다.
 {%- highlight python -%}
 two_arr= [[False] * 1 for _ in range(5)]
