@@ -38,6 +38,8 @@ two_arr[0][0] = True
 하지만 실제로 출력해보면 이런 결과가 나오는 것을 볼 수 있습니다.
 <br>
 `[[True, False], [True, False], [True, False], [True, False], [True, False]]`
+<br><br>
+분명 `[0][0]`을 변경했는데 각 요소의 0번째 요소가 같은 영향을 받았군요. 무슨 일일까요?
 
 <hr>
 
