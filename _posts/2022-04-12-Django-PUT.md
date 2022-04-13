@@ -88,7 +88,11 @@ https://groups.google.com/g/django-developers/c/dxI4qVzrBY4/m/m_9IiNk_p7UJ
 
 # 그럼 어떻게 해?
 
-사실 저희가 사용하는 웹에서는 우선 적절히 모델을 통해 구현되어있는 Serializer가 없고, 현재 클래스 뷰로 만드는 것이 목적이기 때문에 request.POST, request.GET과 같은 형식으로 request.PUT 처럼 데이터를 받으면 굉장히 편할 것 같습니다. 이를 위해 request가 함수로 전달되는 도중에 미들웨어쪽에서 request를 선제적으로 받고 request의 하위 멤버변수에 PUT이라는 변수를 추가하는 형식으로 진행해보도록 하겠습니다. 추후 POST나 PUT에 content-type이 application/json으로 전달되었을 때를 대비하여 JSON이라는 멤버변수도 만들도록 하죠!
+사실 저희가 사용하는 웹에서는 우선 적절히 모델을 통해 구현되어있는 `Serializer`가 없고, 현재 클래스 뷰로 만드는 것이 목적이기 때문에 `request.POST`, `request.GET`과 같은 형식으로 `request.PUT` 처럼 데이터를 받으면 굉장히 편할 것 같습니다.
+<br><br>
+이를 위해 `request`가 함수로 전달되는 도중에 미들웨어쪽에서 `request`를 선제적으로 받고 `request`의 하위 속성에 `PUT`이라는 변수를 추가하는 형식으로 진행해보도록 하겠습니다.
+<br><br>
+추후 POST나 PUT에 `content-type`이 `application/json`으로 전달되었을 때를 대비하여 `JSON`이라는 속성도 만들도록 하죠!
 
 <hr>
 
