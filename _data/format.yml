@@ -5,3 +5,4 @@ python: Python
 django: Django
 jpa: JPA
 web: Web
+codeguide: Code Guide
