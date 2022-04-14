@@ -167,7 +167,7 @@ _▼ Django에서 제안하는 모범사례 예_
 
 ![image](https://user-images.githubusercontent.com/59782504/163424387-9d327726-249a-4212-9089-053b6ef04825.png)
 
-python에서 이게 최선일지, 이상적인 구조일지는 잘 모르겠찌만, 당장 생각나는 문제들이 많아요.
+python에서 이게 최선일지, 이상적인 구조일지는 잘 모르겠지만, 당장 생각나는 문제들이 많아요.
 <br><br>
 Django는 독립적인 app에 views.py에는 비즈니스 로직 및 컨트롤러를, models에는 DB관련된 모델을, template에는 HTML페이지와 CSS, JS들을 넣는데, 앱에 기능이 추가되면 추가될수록 한 파일이 가지는 의존성이 점점 커질테니까요.
 <br><br>
