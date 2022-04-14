@@ -162,7 +162,7 @@ MIDDLEWARE = [
 Raw Query를 Django Model 기반으로 개선하면서 생기는 문제도 추후 포스팅 할 예정이지만, 문제는 Django의 프로젝트 구조인 것 같아요.
 <br>
 여러 레퍼런스를 찾아봤지만 Django Document도 views.py models.py가 비대해질 수 밖에 없는 구조를 권장하더라고요
-
+<br><br>
 _▼ Django에서 제안하는 모범사례 예_
 
 ![image](https://user-images.githubusercontent.com/59782504/163424387-9d327726-249a-4212-9089-053b6ef04825.png)
