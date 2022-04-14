@@ -164,6 +164,7 @@ Raw Query를 Django Model 기반으로 개선하면서 생기는 문제도 추�
 여러 레퍼런스를 찾아봤지만 Django Document도 views.py models.py가 비대해질 수 밖에 없는 구조를 권장하더라고요
 
 _▼ Django에서 제안하는 모범사례 예_
+
 ![image](https://user-images.githubusercontent.com/59782504/163424387-9d327726-249a-4212-9089-053b6ef04825.png)
 
 python에서 이게 최선일지, 이상적인 구조일지는 잘 모르겠찌만, 당장 생각나는 문제들이 많아요.
