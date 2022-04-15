@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (Django)Class View에서 PUT을 통해 데이터를 파싱해오기
+title: (Django) Bug Tracking - Class View에서 PUT을 통해 데이터를 파싱해오기
 tags: [django]
 date: 2022-04-12
 ---
@@ -72,7 +72,7 @@ urlpatterns = [
 
 <hr>
 
-# request.POST는 REST의 POST와는 달라.
+# `request.POST`는 REST의 POST와는 달라.
 
 해당 블로그를 통해 들어가 보면 구글 그룹에서 개발자들끼리 한 이런 대화를 엿볼 수 있는데요(아마 장고 관련자이신가 봐요..?)
 <br>
@@ -142,7 +142,7 @@ class JSONParsingMiddleware(MiddlewareMixin):
                 return HttpResponseBadRequest("unable to parse JSON data. Error : {0}".format(ve))
 ```
 
-그리고 settings.py에 해당 미들웨어를 사용하도록 설정해주면 끝입니다.
+그리고 `settings.py`에 해당 미들웨어를 사용하도록 설정해주면 끝입니다.
 
 ```python
 # my_project_name/settings.py
@@ -161,19 +161,19 @@ MIDDLEWARE = [
 
 Raw Query를 Django Model 기반으로 개선하면서 생기는 문제도 추후 포스팅 할 예정이지만, 문제는 Django의 프로젝트 구조인 것 같아요.
 <br>
-여러 레퍼런스를 찾아봤지만 Django Document도 views.py models.py가 비대해질 수 밖에 없는 구조를 권장하더라고요
+여러 레퍼런스를 찾아봤지만 Django Document도 `views.py`, `models.p`y가 비대해질 수 밖에 없는 구조를 권장하더라고요
 <br><br>
 _▼ Django에서 제안하는 모범사례 예_
 
 ![image](https://user-images.githubusercontent.com/59782504/163424387-9d327726-249a-4212-9089-053b6ef04825.png)
 
-python에서 이게 최선일지, 이상적인 구조일지는 잘 모르겠지만, 당장 생각나는 문제들이 많아요.
+`python`에서 이게 최선일지, 이상적인 구조일지는 잘 모르겠지만, 당장 생각나는 문제들이 많아요.
 <br><br>
-Django는 독립적인 app에 views.py에는 비즈니스 로직 및 컨트롤러를, models에는 DB관련된 모델을, template에는 HTML페이지와 CSS, JS들을 넣는데, 앱에 기능이 추가되면 추가될수록 한 파일이 가지는 의존성이 점점 커질테니까요.
+`Django`는 독립적인 app에 `views.py`에는 비즈니스 로직 및 컨트롤러를, models에는 DB관련된 모델을, `template`에는 `HTML`페이지와 `CSS`, `JS`들을 넣는데, 앱에 기능이 추가되면 추가될수록 한 파일이 가지는 의존성이 점점 커질테니까요.
 <br><br>
-하지만 무작정 views.py를 분리한다면, 순환 참조, 의존성이 점점 커지는 등 여러가지 부분에서 문제가 생기고, 연쇄적으로 문제가 발생할거에요.
+하지만 무작정 `views.py`를 분리한다면, 순환 참조, 의존성이 점점 커지는 등 여러가지 부분에서 문제가 생기고, 연쇄적으로 문제가 발생할거에요.
 <br>
-모듈은 객체지향 모델에 맞게 독립적으로 설계해야 하는데 Django 같은 경우 Spring처럼 의존성을 관리해주는 IOC 컨테이너 같은 좋은 기능이 없으니까요.
+모듈은 객체지향 모델에 맞게 독립적으로 설계해야 하는데 `Django` 같은 경우 `Spring`처럼 의존성을 관리해주는 `IOC` 컨테이너 같은 좋은 기능이 없으니까요.
 <br><br>
 독립적으로 모듈을 어떻게 설계해나가고, 좋은 서비스를 어떻게 만들어갈지 고민하는 것이 추후 과제겠군요.
 <br>
