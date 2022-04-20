@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (Django) Bug Tracking - Class View에서 PUT을 통해 데이터를 파싱해오기
+title: (Trouble Shooting) Class View에서 PUT을 통해 데이터를 파싱해오기
 tags: [django]
 date: 2022-04-12
 ---
