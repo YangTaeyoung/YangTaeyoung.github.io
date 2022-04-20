@@ -451,6 +451,7 @@ th:last-child {
     word-wrap: normal;
     border-radius: 3px;
     padding: 10px;
+    padding-bottom: 0px;
     background: #343642;
     color: #c1c2c3
 }
