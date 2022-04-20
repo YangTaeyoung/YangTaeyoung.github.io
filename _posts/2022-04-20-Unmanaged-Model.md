@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-04-20
-title: (Trouble Shooting) Unmanaged Model을 사용하면서 Test를 적용하기 (feat: Table XXX doesn't exist)
+title: (Trouble Shooting) Unmanaged Model을 사용하면서 Test를 적용하기 (feat. Table XXX doesn't exist)
 tags: [django]
 ---
 
