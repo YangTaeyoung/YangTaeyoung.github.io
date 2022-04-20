@@ -746,7 +746,7 @@ dd {
 }
 
 .post .highlight, .post img {
-    margin-bottom: 2rem
+    margin-bottom: 0 rem;
 }
 
 .post .highlight {
