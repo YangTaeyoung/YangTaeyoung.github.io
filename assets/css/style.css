@@ -450,7 +450,7 @@ th:last-child {
     overflow: auto;
     word-wrap: normal;
     border-radius: 3px;
-    padding: 20px;
+    padding: 10px;
     background: #343642;
     color: #c1c2c3
 }
@@ -1071,7 +1071,7 @@ dd {
     }
 
     .post .pageTitle, .post dl, .post h1, .post h2, .post h3, .post h4, .post h5, .post h6, .post ol, .post p, .post ul {
-        width: 75%;
+        width: 100%;
         float: none;
         margin: 0 auto 2rem
     }
