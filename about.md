@@ -57,6 +57,8 @@ layout: default title: 양태영에 대하여
 [2021.09 ~ 2021.11] 쇼핑몰 텍스트에서 Python 모델명 추출 모델을 통한 사용자 보증기간 관리 API 개발: 
 <a href="https://github.com/YangTaeyoung/MaPDuck-spring">프로젝트 Github 보러가기</a>
 </li>
-
+<li>
+[2022.04 ~] (주)투디지트 - 백엔드 엔지니어 재직 중
+</li>
 </ul>
 </div>
