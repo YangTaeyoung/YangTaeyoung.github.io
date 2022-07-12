@@ -15,12 +15,12 @@ date: 2022-07-12
 Docker를 실행하기 위해서 [Docker Hub](https://hub.docker.com)에서 제공하는 많은 이미지를 사용해볼 수 있다.
 시험삼아 Python 이미지를 살펴보자
 
-![img_3.png](../assets/img/img_3.png)
+![img_3.png](/assets/img/img_3.png)
 > ▲ Docker Hub에서 `python`을 검색한 모습
 
 터미널을 열고 `docker pull python`을 입력하면 최신의 파이썬 이미지를 받을 수 있다.
 
-![img_4.png](../assets/img/img_4.png)
+![img_4.png](/assets/img/img_4.png)
 > 만약 자신의 서비스가 특정 버전의 파이썬을 요구할 경우 태그를 찾아 특정 버전의 파이썬을 설치할 수도 있다.
 _예) `docker pull python:3.8.13`_ 
 
@@ -265,19 +265,19 @@ Docker는 마치 Github처럼 직접 만든 레파지토리를 공유할 수 있
 ## 본인의 Repository 만들기
 본인의 Repository를 만드는 방식은 Github과 크게 다르지 않다.
 
-![img_5.png](../assets/img/img_5.png)
+![img_5.png](/assets/img/img_5.png)
 
 먼저 Docker Hub에서 `Create a Repository`를 눌러보자
 
 
 
-![img_6.png](../assets/img/img_6.png)
+![img_6.png](/assets/img/img_6.png)
 
 이후 화면에서는 본인 Repository에 대한 명세를 입력하면 된다.
 
 Visibility를 통해 Github과 마찬가지로 모두에게 공개(`Public`)할 Repository로 설정할 수도 있고, 허용한 사람만 접근(`Private`)하게 할 수도 있다
 
-![img_7.png](../assets/img/img_7.png)
+![img_7.png](/assets/img/img_7.png)
 
 Repository를 생성하고 나면 옆에 위와 같은 명령어를 통해 `push`가 가능함을 알려준다.
 > Github을 사용해 보았다면 `push`라는 키워드가 익숙할 것이다. 결론은 여러분이 생각한 것이 맞다. 그 `push`이다.
@@ -339,7 +339,7 @@ ver1: digest: sha256:ef143c422f108a12a93c202078d2d9e8c2966e9479b74f6662af9e32bb0
 ```
 실제로 적용해보면 위와 같은 메시지가 나타나며,
 
-![img_8.png](../assets/img/img_8.png)
+![img_8.png](/assets/img/img_8.png)
 
 Repository에도 잘 적용되었음을 알 수 있다.
 
