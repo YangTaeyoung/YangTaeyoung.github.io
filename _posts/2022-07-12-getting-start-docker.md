@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (Docker) 02. Docker 시직하기 create, exec, start, run, commit 
+title: (Docker) 02. Docker 시작하기 create, exec, start, run, commit 
 tags: [docker]
 date: 2022-07-12
 ---
