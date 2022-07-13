@@ -9,11 +9,11 @@ permalink: /
 ---
 
 # 🎉 Welcome 
-방문해주신 모든 여러분 반갑습니다.😁 기린입니다.
+방문해주신 모든 여러분 반갑습니다.👋 기린🦒입니다.`
 
-해당 블로그는 제가 공부한 것을 남기고, 오류가 생긴 원인을 파악하고, `Trouble Shooting` 과정을 명세하기 위해서 제작되었습니다.
+해당 블로그는 제가 공부한 것을 남기고📚, 오류가 생긴 원인을 파악하고🔍, `Trouble Shooting` 과정🔫을 명세하기 위해서 제작되었습니다.
 
-저와 비슷한 고민을 가진 분, 같은 공부를 해가시는 분들에게 조금이나마 해당 블로그가 도움이 되었으면 좋겠습니다.
+저와 비슷한 고민을 가진 분, 같은 공부를 해가시는 분들에게 조금이나마 해당 블로그가 도움이 되었으면 좋겠습니다. 😊
 
 감사합니다 🙇‍
 
@@ -21,11 +21,14 @@ permalink: /
 # 🔍 GiraffeWithCode(양태영)에 대하여
 > 안녕하세요. 편리한 세상을 위한 불편한 개발자 양태영입니다.
 
-<div class="img-wrapper" style="width: 500px;">
-    <img src="/assets/images/profile.jpg" style="border-radius: 50px" alt="profile.jpg">
+<div class="img-wrapper" style="height: 400px; width: 400px; overflow: hidden; border-radius: 50px; box-shadow: 3px 3px 3px 3px black;">
+    <img src="/assets/images/profile.jpg" alt="profile.jpg">
 </div>
 
-## Repository
+## <i class="fa-solid fa-envelope"></i> Email
+[<i class="fa-solid fa-envelope"></i> 0130yang@gmail.com](mailto:0130yang@gmail.com){: .btn .btn-green}
+
+## <i class="fa-solid fa-database"></i> Repository
 [<i class="fa-brands fa-github"></i> Github](https://github.com/YangTaeyoung){: .btn .btn-purple}
 
 # 📃 Carriers
