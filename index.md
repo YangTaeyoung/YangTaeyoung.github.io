@@ -19,6 +19,7 @@ permalink: /
 
 # 🔍 코딩하는 기린(양태영)에 대하여
 > 안녕하세요. 편리한 세상을 위한 불편한 개발자 양태영입니다.
+
 <div class="img-wrapper" style="width: 500px;">
     <img src="/assets/images/profile.jpg" style="border-radius: 50px" alt="profile.jpg">
 </div>
