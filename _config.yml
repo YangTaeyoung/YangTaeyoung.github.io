@@ -16,7 +16,7 @@
 title: 🦒 WithCode
 description: 코딩하는 기린의 코딩이야기
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://YangTaeyoung.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://yangtaeyoung.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"
