@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: GiraffeWithCode
-description: 코딩하는 기린의 코딩이야기
+description: Giraffe의 코딩이야기
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://yangtaeyoung.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 logo: "/assets/images/logo.gif"
