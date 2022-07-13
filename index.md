@@ -8,18 +8,23 @@ date: 2022-07-13
 permalink: /
 ---
 
-# 🎉 Welcome 
-방문해주신 모든 여러분 반갑습니다.👋 기린🦒입니다.`
+# 🎉 Welcome 🎉
+방문해주신 모든 여러분 반갑습니다! 👋 기린입니다. 🦒
 
-해당 블로그는 제가 공부한 것을 남기고📚, 오류가 생긴 원인을 파악하고🔍, `Trouble Shooting` 과정🔫을 명세하기 위해서 제작되었습니다.
+1. 해당 블로그는 제가 공부한 것을 남기고, 📚 
+ 
+2. 오류가 생긴 원인을 파악하고, 🔍 
 
-저와 비슷한 고민을 가진 분, 같은 공부를 해가시는 분들에게 조금이나마 해당 블로그가 도움이 되었으면 좋겠습니다. 😊
+3. `Trouble Shooting` 과정을 명세하기 위해서 제작되었습니다. 🔫
 
-감사합니다 🙇‍
+
+저와 비슷한 고민을 가진 분, 같은 공부를 해가시는 분들에게 조금이나마 이 블로그가 도움이 되었으면 좋겠습니다. 😊
+
+🙇‍ 감사합니다 🙇‍
 
 
 # 🔍 GiraffeWithCode(양태영)에 대하여
-> 안녕하세요. 편리한 세상을 위한 불편한 개발자 양태영입니다.
+> 안녕하세요. "편리한 세상을 위한 불편한 개발자" 양태영입니다.
 
 <div class="img-wrapper" style="height: 400px; width: 400px; overflow: hidden; border-radius: 50px; box-shadow: 3px 3px 3px 3px black;">
     <img src="/assets/images/profile.jpg" alt="profile.jpg">
