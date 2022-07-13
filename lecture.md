@@ -3,6 +3,7 @@ layout: default
 title: "<i class='fa-brands fa-youtube' style='color: red'></i> Lecture"
 description: "코딩하는 기린의 강의입니다."
 parent: 🏠 Home
+date: 2022-07-13
 ---
 
 # <i class='fa-brands fa-youtube' style='color: red'></i> 강의 내역

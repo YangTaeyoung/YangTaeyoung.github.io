@@ -4,6 +4,7 @@ title: 🏠 Home
 nav_order: 1
 description: "코딩하는 기린, 양태영의 개발 이야기입니다."
 has_children: true
+date: 2022-07-13
 permalink: /
 ---
 

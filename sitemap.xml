@@ -6,10 +6,10 @@ layout: null
     {% for post in site.html_pages %}
     <url>
         <loc>{{ site.url }}{{ post.url }}</loc>
-        {% if post.lastmod == null %}
-        <lastmod>{{ post.date }}</lastmod>
-        {% else %}
+        {% if post.lastmod != null%}
         <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+        {% else if post.date != null %}
+        <lastmod>{{ post.date }}</lastmod>
         {% endif %}
 
         {% if post.sitemap.changefreq == null %}
