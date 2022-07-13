@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 📚 Lecture
+title: "<i class='fa-brands fa-youtube' style='color: red'></i> Lecture"
 description: "코딩하는 기린의 강의입니다."
 parent: 🏠 Home
 ---
 
-# 📚 강의 내역
+# <i class='fa-brands fa-youtube' style='color: red'></i> 강의 내역
 동아리에서 진행했던 강의 내역입니다.
 
 ## 1. Oracle Database SQL
