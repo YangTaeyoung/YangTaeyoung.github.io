@@ -2,14 +2,14 @@
 layout: default
 title: 🏠 Home
 nav_order: 1
-description: "코딩하는 기린, 양태영의 개발 이야기입니다."
+description: "GiraffeWithCode, 양태영의 개발 이야기입니다."
 has_children: true
 date: 2022-07-13
 permalink: /
 ---
 
 # 🎉 Welcome 
-방문해주신 모든 여러분 반갑습니다.😁 코딩하는 기린입니다.
+방문해주신 모든 여러분 반갑습니다.😁 기린입니다.
 
 해당 블로그는 제가 공부한 것을 남기고, 오류가 생긴 원인을 파악하고, `Trouble Shooting` 과정을 명세하기 위해서 제작되었습니다.
 
@@ -18,7 +18,7 @@ permalink: /
 감사합니다 🙇‍
 
 
-# 🔍 코딩하는 기린(양태영)에 대하여
+# 🔍 GiraffeWithCode(양태영)에 대하여
 > 안녕하세요. 편리한 세상을 위한 불편한 개발자 양태영입니다.
 
 <div class="img-wrapper" style="width: 500px;">
