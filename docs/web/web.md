@@ -2,6 +2,7 @@
 layout: post
 title: Web
 has_children: true
+date: 2022-07-13
 ---
 
 # 👋 Hello Web!

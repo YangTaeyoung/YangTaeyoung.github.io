@@ -2,6 +2,7 @@
 layout: post
 title: Case Style에 대해 알아보자 (Camel Case? Pascal Case? Kebab Case?)
 parent: Code Guide
+date: 2022-04-14
 ---
 ## Table of contents
 {: .no_toc .text-delta }

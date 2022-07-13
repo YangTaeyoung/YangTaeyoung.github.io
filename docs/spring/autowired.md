@@ -3,6 +3,7 @@ layout: post
 title: Autowired 어노테이션에 대해 알아보자
 nav_order: 3
 parent: Spring
+date: 2022-02-24
 ---
 ## Table of contents
 {: .no_toc .text-delta }

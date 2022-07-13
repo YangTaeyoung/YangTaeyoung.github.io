@@ -2,6 +2,7 @@
 layout: post
 title: Django
 has_children: true
+date: 2022-07-13
 ---
 # 👋 Hello Django!
 ![img.png](/assets/images/django/img.png)

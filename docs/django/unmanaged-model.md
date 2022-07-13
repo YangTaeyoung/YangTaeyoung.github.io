@@ -2,6 +2,7 @@
 layout: post
 title: Unmanaged Model을 사용하면서 Test를 적용하기 (feat. Table XXX doesn't exist)
 parent: Django
+date: 2022-04-20
 ---
 ## Table of contents
 {: .no_toc .text-delta }

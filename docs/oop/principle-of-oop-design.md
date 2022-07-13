@@ -3,6 +3,7 @@ layout: post
 title: 객체지향 설계 원칙 SOLID 원칙에 대해 알아보자.
 parent: OOP
 nav_order: 1
+date: 2022-02-25
 ---
 ## Table of contents
 {: .no_toc .text-delta }

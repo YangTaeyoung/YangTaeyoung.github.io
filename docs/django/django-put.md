@@ -2,6 +2,7 @@
 layout: post
 title: Class View에서 PUT을 통해 데이터를 파싱해오기
 parent: Django
+date: 2022-04-12
 ---
 ## Table of contents
 {: .no_toc .text-delta }

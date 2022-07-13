@@ -2,6 +2,7 @@
 layout: post
 title: Code Guide
 has_children: true
+date: 2022-07-13
 ---
 # 👋 Hello Code Guide!
 개발자들의 코드 가이드! 

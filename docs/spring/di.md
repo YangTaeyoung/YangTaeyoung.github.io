@@ -3,6 +3,7 @@ layout: post
 title: 의존성 주입 (Dependency Injection, DI)에 대해 알아보자
 parent: Spring
 nav_order: 2
+date: 2022-02-24
 ---
 ## Table of contents
 {: .no_toc .text-delta }
