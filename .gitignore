@@ -6,3 +6,4 @@ node_modules
 .jekyll-cache/
 .jekyll-cache/*
 .idea/**
+Gemfile.lock
