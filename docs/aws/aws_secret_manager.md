@@ -91,14 +91,14 @@ Github Action에서 Build시 아규먼트를 변경합니다.
         with:
           context: .
           push: true
-          tags: ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }}
+          tags: $\{\{ env.ECR_REGISTRY \}\}/$\{\{ env.ECR_REPOSITORY \}\}:${{ env.IMAGE_TAG \}\}
           cache-from: type=gha
           cache-to: type=gha,mode=max
           build-args: |
-            ARG_ENVIRONMENT=${{ env.ENVIRONMENT }}
-            ARG_AWS_REGION=${{ env.AWS_REGION }}
-            ARG_AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}
-            ARG_AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            ARG_ENVIRONMENT=$\{\{ env.ENVIRONMENT \}\}
+            ARG_AWS_REGION=$\{\{ env.AWS_REGION \}\}
+            ARG_AWS_ACCESS_KEY_ID=$\{\{ secrets.AWS_ACCESS_KEY_ID \}\}
+            ARG_AWS_SECRET_ACCESS_KEY=$\{\{ secrets.AWS_SECRET_ACCESS_KEY \}\}
 ```
 기존의 CONFIG_FILE 의 경로를 주입하는 부분을 제거하고 AWS에 접근하기 위해 필요한 정보 Region, AWS Access Key ID, AWS Secret Access Key, Environment 정보 _(빌드하고자 하는 환경:  `예: dev`)_ 를 받도록 하였습니다.
 
