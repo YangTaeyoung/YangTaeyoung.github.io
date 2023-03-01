@@ -91,7 +91,7 @@ Github Action에서 Build시 아규먼트를 변경합니다.
         with:
           context: .
           push: true
-          tags: $\{\{ env.ECR_REGISTRY \}\}/$\{\{ env.ECR_REPOSITORY \}\}:${{ env.IMAGE_TAG \}\}
+          tags: $\{\{ env.ECR_REGISTRY \}\}/$\{\{ env.ECR_REPOSITORY \}\}:$\{\{ env.IMAGE_TAG \}\}
           cache-from: type=gha
           cache-to: type=gha,mode=max
           build-args: |
@@ -156,8 +156,8 @@ Dependency Injection 순서도 AWS가 먼저 생성될 수 있도록 순서를 �
 ```go
 func New(flags *cli.Flags, secretsManager *secretsmanager.SecretsManager) *Config {
 	var (
-		config    Config
-		configKey = fmt.Sprintf(SecretManagerConfigKey, flags.Environment)
+		config    Config // 주입받을 config 구조체
+		configKey = fmt.Sprintf(SecretManagerConfigKey, flags.Environment) // "someapp/config/dev"
 	)
 
 	result, err := secretsManager.GetSecretValue(&secretsmanager.GetSecretValueInput{
