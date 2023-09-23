@@ -8,7 +8,7 @@ date: 2023-09-23
 {: .no_toc .text-delta }
 
 1. TOC
-   {:toc}
+{:toc}
 ---
 
 # 개요
