@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OOP
+title: <iconify-icon icon="solar:programming-bold"></iconify-icon> OOP
 has_children: true
 date: 2022-07-13
 ---

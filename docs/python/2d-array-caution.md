@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2차원 배열의 요소를 동일한 요소로 초기화 할 때 주의할 점
-parent: Python
+parent: <i class="fa-brands fa-python"></i> Python
 date: 2022-03-02
 ---
 ## Table of contents

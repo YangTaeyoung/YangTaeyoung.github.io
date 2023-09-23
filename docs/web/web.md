@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web
+title: 🌐 Web
 has_children: true
 date: 2022-07-13
 ---

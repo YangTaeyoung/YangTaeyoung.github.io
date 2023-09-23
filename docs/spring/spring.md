@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spring
+title: <iconify-icon icon="logos:spring-icon"></iconify-icon> Spring
 has_children: true
 date: 2022-07-13
 ---

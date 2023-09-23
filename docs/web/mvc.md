@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MVC에 대해 알아보자
-parent: Web
+parent: 🌐 Web
 date: 2022-02-22
 ---
 ## Table of contents

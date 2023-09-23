@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Golang 에서 csv로 내보낸 파일에서 한글 깨짐 해결
-parent: Go
+parent: <i class="fa-brands fa-golang"></i> Go
 date: 2023-09-23
 ---
  ## Table of contents

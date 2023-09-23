@@ -2,7 +2,7 @@
 layout: post
 title: Autowired 어노테이션에 대해 알아보자
 nav_order: 3
-parent: Spring
+parent: <iconify-icon icon="logos:spring-icon"></iconify-icon> Spring
 date: 2022-02-24
 ---
 ## Table of contents

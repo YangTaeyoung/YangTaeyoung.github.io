@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Go
+title: <i class="fa-brands fa-golang"></i> Go
 has_children: true
 date: 2023-09-23
 ---

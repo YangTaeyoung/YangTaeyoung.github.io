@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Class View에서 PUT을 통해 데이터를 파싱해오기
-parent: Django
+parent: <iconify-icon icon="simple-icons:django"></iconify-icon>
+  Django
 date: 2022-04-12
 ---
 ## Table of contents

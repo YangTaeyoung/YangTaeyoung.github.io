@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Django
+title: <iconify-icon icon="simple-icons:django"></iconify-icon>
+   Django
 has_children: true
 date: 2022-07-13
 ---

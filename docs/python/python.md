@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python
+title: <i class="fa-brands fa-python"></i> Python 
 has_children: true
 date: 2022-07-13
 ---

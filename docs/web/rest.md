@@ -1,7 +1,7 @@
 ---
 layout: post
 title: REST?, RESTful?, REST API? 가 도대체 뭐야?
-parent: Web
+parent: 🌐 Web
 date: 2022-02-28
 ---
 ## Table of contents
