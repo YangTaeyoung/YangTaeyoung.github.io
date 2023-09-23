@@ -4,7 +4,12 @@ title: AWS Secrets Manager를 사용하여 Config파일을 AWS에서 관리하�
 parent: AWS
 date: 2023-03-01
 ---
+## Table of contents
+{: .no_toc .text-delta }
 
+1. TOC
+   {:toc}
+--- 
 # 도입
 
 ![image](https://user-images.githubusercontent.com/110372475/221461996-0050ebf2-c12b-4409-9b08-9a37f4ef98a0.png)

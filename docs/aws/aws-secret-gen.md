@@ -4,7 +4,12 @@ title: AWS Secrets Manager를 활용해서 로컬 시크릿을 잘 관리하는 
 parent: AWS
 date: 2023-09-23
 ---
+## Table of contents
+{: .no_toc .text-delta }
 
+1. TOC
+   {:toc}
+--- 
 # 개요
 ![](../../assets/images/aws/ca97b1f1a197a40a8559e7ec60c76f99.png)
 회사에서 로컬로 시크릿을 공유하다 보면 Slack, 카카오톡 과 같은 메신저를 통해 시크릿을 주고 받는 일이 종종 생긴다.
