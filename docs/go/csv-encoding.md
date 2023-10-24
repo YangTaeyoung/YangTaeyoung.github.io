@@ -14,7 +14,7 @@ date: 2023-09-23
 # BOM
 Excel은 UTF-8 인코딩된 CSV 파일을 올바르게  읽기 위해 파일의 문서 앞에 BOM이 필요하다.
 
-> BOM: **바이트 순서 표시**(Byte Order Mark, **BOM**)는 [유니코드](https://ko.wikipedia.org/wiki/%EC%9C%A0%EB%8B%88%EC%BD%94%EB%93%9C "유니코드") 문자 U+FEFF byte order mark로, [매직 넘버](https://ko.wikipedia.org/wiki/%EB%A7%A4%EC%A7%81_%EB%84%98%EB%B2%84 "매직 넘버")로서 문서의 가장 앞에 추가하여 텍스트를 읽는 [프로그램](https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8 "프로그램")에 여러 정보를 전달할 수 있다
+> BOM: **바이트 순서 표시**(Byte Order Mark, **BOM**)는 [유니코드](https://ko.wikipedia.org/wiki/%EC%9C%A0%EB%8B%88%EC%BD%94%EB%93%9C "유니코드") 문자 U+FEFF byte order mark로, [매직 넘버](https://ko.wikipedia.org/wiki/%EB%A7%A4%EC%A7%81_%EB%84%98%EB%B2%84 "매직 넘버")로서 문서의 가장 앞에 추가하여 텍스트를 읽는 [프로그램](https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8 "프로그램")에 여러 정보를 전달할 수 있다
 
 
 # In Code
