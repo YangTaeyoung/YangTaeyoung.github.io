@@ -1,0 +1,75 @@
+# Hugo configuration file
+title: 코드기린
+
+# import hextra as module
+module:
+  imports:
+  - path: github.com/imfing/hextra
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: Blog
+      pageRef: /blog
+      weight: 1
+    - name: Lecture
+      pageRef: /lecture
+      weight: 2
+    - name: Profile
+      pageRef: /profile
+      weight: 3
+    - name: Contact ↗
+      url: "mailto:0130yang@gmail.com"
+      weight: 4
+    - name: Search
+      weight: 5
+      params:
+        type: search
+    - name: LinkedIn
+      weight: 6
+      url: "https://www.linkedin.com/in/%ED%83%9C%EC%98%81-%EC%96%91-008872269/"
+      params:
+        icon: linkedin
+    - name: GitHub
+      weight: 7
+      url: "https://github.com/YangTaeyoung"
+      params:
+        icon: github
+
+
+params:
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: wide
+
+  navbar:
+    displayTitle: true
+    displayLogo: false
+
+  footer:
+    displayCopyright: false
+    displayPoweredBy: true
+
+  editURL:
+    enable: true
+    base: "https://github.com/YangTaeyoung/YangTaeyoung.github.io/edit/main/content"
+
+  comments:
+    enable: false
+    type: giscus
+
+    giscus:
+      repo: YangTaeyoung/YangTaeyoung.github.io
+      repoId: R_kgDOG5jP0g
+      category: Comments
+      categoryId: DIC_kwDOG5jP0s4Cd3Pt
+

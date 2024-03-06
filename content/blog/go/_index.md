@@ -1,0 +1,4 @@
+---
+title: Go
+type: blog
+---
