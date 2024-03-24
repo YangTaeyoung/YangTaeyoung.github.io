@@ -16,6 +16,8 @@ markup:
   highlight:
     noClasses: false
 
+enableRobotsTXT: false
+
 menu:
   main:
     - name: Blog
