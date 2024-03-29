@@ -46,6 +46,8 @@ jobs:
         with:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
+      - name: Update github submodule
+        run: git submodule update --init
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
