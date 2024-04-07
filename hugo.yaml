@@ -72,3 +72,6 @@ params:
       category: Comments
       categoryId: DIC_kwDOG5jP0s4Cd3Pt
 
+services:
+  googleAnalytics:
+    ID: G-Q7QBB1SGG3
