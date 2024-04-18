@@ -4,7 +4,7 @@ type: about
 date: 2022-07-13
 ---
 
-안녕하세요. "편리한 세상을 위한 불편한 개발자" 양태영입니다.
+안녕하세요. _"편리한 세상을 위한 불편한 개발자"_ **양태영**입니다.
 
 ![profile](/images/profile/profile.jpg) 
 
@@ -13,8 +13,13 @@ date: 2022-07-13
 
 {{% steps %}}
 
+### (유)일루미나리안 - 백엔드 엔지니어 재직
+> 2024-04 ~ 현재
+ 
+<img src="https://img.shields.io/badge/SPRING-6DB33F?style=for-the-badge&logo=Spring&logoColor=white" alt="spring" style="display: inline">
+
 ### (주)룩코 - 백엔드 엔지니어 재직
-> 2022-08 ~ 현재
+> 2022-08 ~ 2024-04
 
 <img src="https://img.shields.io/badge/GO-00ADD8?style=for-the-badge&logo=Go&logoColor=white" alt="go" style="display: inline">
 <img src="https://img.shields.io/badge/MONGODB-47A248?style=for-the-badge&logo=MongoDB&logoColor=white" alt="mongodb" style="display: inline">
