@@ -15,5 +15,5 @@ type: docs
   {{< card link="/blog/web" title="Web" icon="star">}}
   {{< card link="/blog/oop" title="객체 지향 프로그래밍" icon="star">}}
   {{< card link="/blog/spring" title="Spring" icon="star">}}
-
+  {{< card link="/blog/github-action" title="Github Action" icon="star">}}
 {{< /cards >}}
