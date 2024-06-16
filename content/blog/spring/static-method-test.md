@@ -339,6 +339,26 @@ public class EventNumberPicker {
 ![image](/images/spring/static-method-test-1718443206484.png)
 > `doSomething` 이 출력되지 않는 것을 확인할 수 있다.
 
+#### 파라미터 값까지 검증하기
+이것 외에도 흔히 알려진 `verify()` 메서드를 이용하면 호출 여부 뿐 아니라 파라미터 값까지 검증할 수 있다.
+```java{filename=EventNumberPicker.java} 
+public static void doSomething(int from, int to) {
+    System.out.println("doSomething" + from + to);
+}
+```
+우선 위와 같이 파라미터를 받도록 메서드를 수정하고, 테스트 코드에서는 아래와 같이 작성한다.
+
+```
+// ...
+eventNumberPicker.verify(
+() -> EventNumberPicker.doSomething(1, 900));
+```
+
+일반적인 `verify()` 메서드와 다른 점은` Mockito.verify()`는 Mockito 의 static 메서드이나, 해당 메서드는 `mockStatic()` 메서드를 통해 생성한 `MockStatic` 인스턴스에서 사용하여야 한다는 점이다.
+
+![image](/images/spring/static-method-test-1718522103669.png)
+> 파라미터가 기대한 경우와 다른 경우 에러가 나는 모습을 확인할 수 있다.
+
 ### 특정 메서드를 Mocking을, 다른 메서드는 실제 메서드를 사용하고 싶다면?
 이 경우 `when()`을 이용해 Mocking 하되, `thenCallRealMethod()`를 사용하면 된다.
 
