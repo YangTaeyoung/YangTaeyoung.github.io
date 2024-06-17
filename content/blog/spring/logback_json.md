@@ -4,12 +4,13 @@ type: blog
 date: 2024-06-17
 comments: true
 ---
+![image](/images/spring/logback_json-1718636794759.gif)
 
 API 서버를 운영하다 보면 운영 사항에 대해 로그를 남기거나, 디버그를 위해 로그를 남기는 경우가 많다.
 
 전통적으로 스프링에서는 Log를 남길 때 포맷이 존재하긴 하나, Raw Text 형태로 남기는 경우가 많고, 이와 같은 경우 필자의 경우 가시성에 있어서는 JSON 형태로 로그를 남기는 것 보다 더 좋다고 생각한다.
 
-다만 로그를 검색하고, 필터링 하는 경우에는 이야기가 다른데, CloudWatch 와 같이 로그를 검색할 수 있는 플랫폼의 경우 Raw Text 형태로 로깅하면 어떤 함수에서 어떤 데이터가 나왔는지 필터링이 어렵다.
+다만 로그를 검색하고, 필터링 하는 경우에는 이야기가 다른데, AWS CloudWatch 와 같이 로그를 검색할 수 있는 플랫폼의 경우 Raw Text 형태로 로깅하면 어떤 함수에서 어떤 데이터가 나왔는지 필터링이 어렵다.
 
 특히 복합적으로 여러 조건 하에서 검색해야 하는 경우 더욱 어렵다.
 
@@ -26,7 +27,7 @@ Logback은 SLF4J의 구현체로, Spring Boot에서 기본적으로 사용하는
 
 ## Slf4j
 
-Slf4j는 Simple Logging Facade for Java의 약자로, Java의 로깅 라이브러리를 추상화한 인터페이스이다.
+Slf4j는 **Simple Logging Facade for Java**의 약자로, Java의 로깅 라이브러리를 추상화한 인터페이스이다.
 
 말 그대로 인터페이스이기 때문에, 실제
 구현체는 [Logback](https://logback.qos.ch/), [Log4j](https://logging.apache.org/log4j/2.x/), [Log4j2](https://logging.apache.org/log4j/2.12.x/), [JUL](https://docs.oracle.com/javase/8/docs/api/java/util/logging/package-summary.html)
@@ -38,13 +39,13 @@ Slf4j는 Simple Logging Facade for Java의 약자로, Java의 로깅 라이브�
 
 기본적으로 Logback 설정은 `logback-spring.xml` 파일을 생성하여 설정할 수 있다.
 
-해당 구성은 크게, Appender, Logger, Encoder로 구성된다.
+해당 구성은 크게, Appender, Logger, Encoder 로 구성된다.
 
 ### Appender
 
 Appender는 로그를 어디에 출력할지를 결정하는 역할을 한다.
 
-기본적으로 ConsoleAppender, FileAppender, RollingFileAppender, SyslogAppender 등 다양한 Appender가 존재한다.
+기본적으로 `ConsoleAppender`, `FileAppender`, `RollingFileAppender`, `SyslogAppender` 등 다양한 Appender 가 존재한다.
 
 ### Logger
 
@@ -58,7 +59,7 @@ Encoder는 로그를 어떤 형식으로 출력할지를 결정하는 역할을 
 
 기본적으로 `PatternLayoutEncoder`를 사용하면 Raw Text 형태로 로그를 남길 수 있으며, `JsonEncoder`를 사용하면 JSON 형태로 로그를 남길 수 있다.
 
-필자는 로컬에서는 PatternLayoutEncoder를 사용하고, 배포 환경에서는 JsonEncoder를 사용하여 로그를 남기는 방법을 안내할 것이다.
+필자는 로컬에서는 `PatternLayoutEncoder`를 사용하고, 배포 환경에서는 `JsonLayout`를 사용하여 로그를 남기는 방법을 안내할 것이다.
 
 ## JsonLayout
 
@@ -194,3 +195,11 @@ public class ProductService {
 ### `CONSOLE_JSON`
 ![image](/images/spring/logback_json-1718636188423.png)
 > 개인적으로는 더럽다고 생각하지만, 검색은 편해질 것이다.
+
+## Reference 
+- [Logback](https://logback.qos.ch/)
+- [Slf4j](http://www.slf4j.org/)
+- [logback을 활용하여 로그를 json 형식으로 파싱하기](https://velog.io/@choihuk/logback%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%98%EC%97%AC-%EB%A1%9C%EA%B7%B8%EB%A5%BC-json-%ED%98%95%EC%8B%9D%EC%9C%BC%EB%A1%9C-%ED%8C%8C%EC%8B%B1%ED%95%98%EA%B8%B0-%EB%A1%9C%EA%B7%B8-%EC%8B%9C%EC%8A%A4%ED%85%9C-3)
+- [Springboot에서 Logback 설정하기(logback-spring.xml)](https://velog.io/@woosim34/Springboot-Logback-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0)
+- [Logback을 이용해 운영 환경 별 로그 남기기](https://blog.pium.life/server-logging/)
+- [logback을 활용하여 로그를 json 형식으로 파싱하기 [로그 시스템 3]](https://velog.io/@choihuk/logback%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%98%EC%97%AC-%EB%A1%9C%EA%B7%B8%EB%A5%BC-json-%ED%98%95%EC%8B%9D%EC%9C%BC%EB%A1%9C-%ED%8C%8C%EC%8B%B1%ED%95%98%EA%B8%B0-%EB%A1%9C%EA%B7%B8-%EC%8B%9C%EC%8A%A4%ED%85%9C-3)
