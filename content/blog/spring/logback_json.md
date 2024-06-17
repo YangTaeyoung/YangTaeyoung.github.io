@@ -189,8 +189,8 @@ public class ProductService {
 환경별로 로깅을 이렇게 나누면 로컬에서는 가시성을 가져가면서도, 동시에 배포 환경에서는 검색을 좀 더 편하게 할 수 있을 것이다.
 
 ### `CONSOLE_STDOUT`
-![image](./logback_json-1718636141145.png)
+![image](/images/spring/logback_json-1718636141145.png)
 
 ### `CONSOLE_JSON`
-![image](./logback_json-1718636188423.png)
+![image](/images/spring/logback_json-1718636188423.png)
 > 개인적으로는 더럽다고 생각하지만, 검색은 편해질 것이다.
