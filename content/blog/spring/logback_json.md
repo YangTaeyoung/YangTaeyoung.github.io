@@ -1,5 +1,5 @@
 ---
-title: Spring Boot에서 Logback을 이용한 JSON 로그 출력하기
+title: Spring Boot에서 Logback을 이용한 Pattern 로그 및 JSON 로그 출력하기
 type: blog
 date: 2024-06-17
 comments: true

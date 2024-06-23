@@ -75,3 +75,5 @@ params:
 services:
   googleAnalytics:
     ID: G-Q7QBB1SGG3
+
+timeZone: Asia/Seoul
