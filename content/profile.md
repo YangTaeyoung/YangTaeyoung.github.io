@@ -76,6 +76,66 @@ date: 2022-07-13
 
 {{% /details %}}
 
+
+
+### (주)투디지트 - 백엔드 엔지니어 재직
+<img src="https://img.shields.io/badge/DJANGO-092E20?style=for-the-badge&logo=Django&logoColor=white" alt="django" style="display: inline">
+<img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=Python&logoColor=white" alt="python" style="display: inline">
+<img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black" alt="javascript" style="display: inline">
+<img src="https://img.shields.io/badge/DOCKER-2496ED?style=for-the-badge&logo=Docker&logoColor=white" alt="docker" style="display: inline">
+<img src="https://img.shields.io/badge/GITHUB%20ACTIONS-2088FF?style=for-the-badge&logo=GitHub-Actions&logoColor=white" alt="github-action" style="display: inline">
+
+> 2022-04 ~ 2022-07
+
+{{% details title="More" closed="true" %}}
+
+- 백엔드 엔지니어로써 백오피스 서버 유지보수 및 트레이딩 뷰 개발 및 배포를 담당하였습니다.
+- Django에서 SQL쿼리로 되어있는 부분을 Django ORM으로 리펙토링한 경험이 있습니다.
+- Javascript 모듈 Trading View를 이용하여 주가 차트를 구현한 경험이 있습니다.
+
+{{% /details %}}
+
+
+{{% /steps %}}
+
+## 📚 Projects & Activities
+
+{{% steps %}} 
+
+### 개발자를 위한 블로그 플랫폼 "Plog" 개발 팀장
+> 2022-07 ~ 2023-11
+
+<img src="https://img.shields.io/badge/SPRING-6DB33F?style=for-the-badge&logo=Spring&logoColor=white" alt="spring" style="display: inline">
+<img src="https://img.shields.io/badge/JAVA-000000?style=for-the-badge&logo=openjdk&logoColor=white" alt="java" style="display: inline">
+<img src="https://img.shields.io/badge/POSTGRESQL-336791?style=for-the-badge&logo=PostgreSQL&logoColor=white" alt="postgresql" style="display: inline">
+<img src="https://img.shields.io/badge/DOCKER-2496ED?style=for-the-badge&logo=Docker&logoColor=white" alt="docker" style="display: inline">
+<img src="https://img.shields.io/badge/GRAFANA-F46800?style=for-the-badge&logo=Grafana&logoColor=white" alt="grafana" style="display: inline">
+<img src="https://img.shields.io/badge/AWS%20ECS-FF9900?style=for-the-badge&logo=amazonecs&logoColor=white" alt="ecs" style="display: inline">
+<img src="https://img.shields.io/badge/REDIS-FF4438?style=for-the-badge&logo=redis&logoColor=white" alt="prometheus" style="display: inline">
+<img src="https://img.shields.io/badge/REACT-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="react" style="display: inline">
+<img src="https://img.shields.io/badge/AWS%20AMPLIFY-FF9900?style=for-the-badge&logo=awsamplify&logoColor=white" alt="amplify" style="display: inline">
+<img src="https://img.shields.io/badge/GITHUB%20ACTION-2088FF?style=for-the-badge&logo=GitHub-Actions&logoColor=white" alt="github-action" style="display: inline">
+
+{{< cards >}}
+{{< card link="https://github.com/project-555" title="Github" subtitle="어떻게 소스코드가 구성되어 있는지, 각 파트별 디테일한 내부 코드와 구성을 살펴볼 수 있어요." >}}
+{{< card link="https://project-555.github.io/" title="Blog" subtitle="프로젝트에서 신경 쓴 부분, 개발하면서 맞이하였던 역경을 기록해두었어요.">}}
+{{< card link="https://www.plogcareers.net" title="Plog" subtitle="배포되어 있는 서비스에요. 상황에 따라 비용 문제로 닫혀있을 수 있어요." >}}
+{{< /cards >}}
+
+{{% details title="More" closed="true" %}}
+
+- 공부를 목적으로 개발자를 위한 블로그 플랫폼 "Plog"의 팀장으로 개발을 리딩하였습니다.
+- 매주 회의를 통해 진행사항을 확인하고 [Github Discussion](https://github.com/project-555/.github/discussions?discussions_q=)을 활용하여 기록을 남겨두었습니다.
+- Spring Boot를 사용하여 REST API를 구현하였으며, PostgreSQL을 사용하여 메인 데이터를 저장하였습니다.
+- Redis를 이용하여 API 캐싱, 이메일 인증을 구현하였습니다.
+- Github Actions > ECR > ECS 로 이어지는 배포 CI/CD 파이프라인을 구축하였습니다.
+- Testcontainers를 통해 Repository Test를 진행하였고, 각 레이어별 유닛 테스트 코드를 작성하였습니다.
+- Grafana를 활용하여 CloudWatch 로그를 모니터링하였습니다.
+- React를 사용하여 프론트엔드를 구현하였으며, AWS Amplify를 사용하여 배포하였습니다.
+- Toast UI Editor를 통해 파일 업로드 및 마크다운 에디터를 구현하였습니다.
+
+{{% /details %}}
+
 ### 알고리즘 사내 스터디장
 <img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=GitHub&logoColor=white" alt="github" style="display: inline">
 <img src="https://img.shields.io/badge/ALGORITHM-008000?style=for-the-badge&logo=Algorithm&logoColor=white" alt="algorithm" style="display: inline">
@@ -97,6 +157,11 @@ date: 2022-07-13
 
 > 2022-05 ~ 2022-06
 
+{{< cards >}}
+{{< card link="https://wikidocs.net/book/8131" title="Wiki Docs" subtitle="스터디의 결과물, 전자 책 틀린코드를 주목해주세요!" >}}
+{{< card link="https://github.com/2022-2digit-study/2022-clean-code-study" title="Github" subtitle="스터디의 룰, 내용들을 좀 더 살펴볼 수 있어요">}}
+{{< /cards >}}
+
 {{% details title="More" closed="true" %}}
 
 - 사내에서 사용했던 파이썬에 대해 좀 더 심층적으로 탐구하고자 클린코드 스터디를 진행하였습니다.
@@ -105,28 +170,17 @@ date: 2022-07-13
 
 {{% /details %}}
 
-### (주)투디지트 - 백엔드 엔지니어 재직
-<img src="https://img.shields.io/badge/DJANGO-092E20?style=for-the-badge&logo=Django&logoColor=white" alt="django" style="display: inline">
-<img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=Python&logoColor=white" alt="python" style="display: inline">
-<img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black" alt="javascript" style="display: inline">
-<img src="https://img.shields.io/badge/DOCKER-2496ED?style=for-the-badge&logo=Docker&logoColor=white" alt="docker" style="display: inline">
-<img src="https://img.shields.io/badge/GITHUB%20ACTIONS-2088FF?style=for-the-badge&logo=GitHub-Actions&logoColor=white" alt="github-action" style="display: inline">
-
-> 2022-04 ~ 2022-07
-
-{{% details title="More" closed="true" %}}
-
-- 백엔드 엔지니어로써 백오피스 서버 유지보수 및 트레이딩 뷰 개발 및 배포를 담당하였습니다.
-- Django에서 SQL쿼리로 되어있는 부분을 Django ORM으로 리펙토링한 경험이 있습니다.
-- Javascript 모듈 Trading View를 이용하여 주가 차트를 구현한 경험이 있습니다.
-
-{{% /details %}}
-
 ### 쇼핑몰 텍스트에서 Python 모델명 추출 모델을 통한 사용자 보증기간 관리 API 개발
 <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=Python&logoColor=white" alt="python" style="display: inline">
 <img src="https://img.shields.io/badge/MARIADB-003545?style=for-the-badge&logo=MariaDB&logoColor=white" alt="mariadb" style="display: inline">
 <img src="https://img.shields.io/badge/SPRING-6DB33F?style=for-the-badge&logo=Spring&logoColor=white" alt="spring" style="display: inline">
 <img src="https://img.shields.io/badge/EC2-232F3E?style=for-the-badge&logo=amazonec2&logoColor=white" alt="ec2" style="display: inline">
+
+{{< cards >}}
+{{< card link="https://github.com/MaPDuck" title="Github">}}
+{{< card link="https://gossamer-liver-d26.notion.site/MaPDuck-3e842cb9f60c4dfe878a97c3506ef2ae" title="Notion">}}
+{{< /cards >}}
+
 
 > 2021-09 ~ 2021-11
 
@@ -164,6 +218,12 @@ date: 2022-07-13
 <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black" alt="javascript" style="display: inline">
 
 > 2020-12 ~ 2021-09
+
+{{< cards >}}
+{{< card link="https://github.com/YangTaeyoung/IBAS" title="Github">}}
+{{< card link="https://www.inhabas.com" title="IBAS">}}
+{{< /cards >}}
+
 
 {{% details title="More" closed="true" %}}
 
