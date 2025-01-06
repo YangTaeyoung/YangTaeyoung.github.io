@@ -48,7 +48,7 @@ date: 2022-07-13
 - Github Actions > ECR > Event Bridge > ECS 로 이어지는 배포 CI/CD 파이프라인을 구축하였습니다.
 - 테스트 관련 신뢰성을 향상시키고 실행 시간을 최적화 하였습니다.
     - Testcontainers를 통해 Repository Test를 추가하여 쿼리에 대한 신뢰성을 향상시켰습니다.
-    - 테스트 시간을 최적화하기 위해 `@SpringBootTest`를 `@WebMvcTest`와 `DataJpaTest`로 분리하여 실행시간을 3분의 1로 최적화하였습니다.
+    - 테스트 시간을 최적화하기 위해 `@SpringBootTest`를 `@WebMvcTest`와 `@DataJpaTest`로 분리하여 실행시간을 3분의 1로 최적화하였습니다.
     - Self-Hosted Runner를 도입하여 실행시간을
       최적화하고, [Self-Hosted Runner가 다운되었을 때 Failover를 위한 대비책을 마련](/blog/github-action/self-hosted-online-checker/)하였습니다.
 - Grafana Tempo를 활용한 분산 추적 시스템을 구축하였습니다.
