@@ -14,11 +14,11 @@ comments: true
 회사에 처음 들어왔을 때도 그랬는데, 이 부분엔 어떤 라벨을 붙여야 하고, Reviewer 로 누굴 지정해야 하고 이런 부분이 번거로웠던 것 같다.
 
 ## Auto Assign Action
-사실 Github 의 기능으로는 이런 것들을 자동으로 지정해주진 않는다. 하지만 Github Action 의 이벤트를 이용하면 PR이 오픈될 때를 타깃으로 특정 액션이 수행되도록 할 수 있다.
+사실 Github 의 기능으로는 이런 것들을 자동으로 지정해주진 않는다. 하지만 Github Actions 의 이벤트를 이용하면 PR이 오픈될 때를 타깃으로 특정 액션이 수행되도록 할 수 있다.
 
 실제 수행하는 액션은 직접 구현할 수도 있지만 이미 해당 기능을 구현해놓은 것이 있어 해당 액션을 사용하면 편리하게 Assignee 와 Reviewer 를 지정할 수 있다.
 
-해당 예제에서는 Github Action 마켓 플레이스에 있는 [Auto Assign Action](https://github.com/kentaro-m/auto-assign-action) 을 이용할 것이다.
+해당 예제에서는 Github Actions 마켓 플레이스에 있는 [Auto Assign Action](https://github.com/kentaro-m/auto-assign-action) 을 이용할 것이다.
 
 ![image](/images/github_action/pr-auto-assign-assignee-reviewer-1716454564478.png)
 
@@ -29,7 +29,7 @@ comments: true
 또한 include, ignore 할 라벨이나, 키워드를 정의할 수 있기 때문에 Auto Assign Action을 필요로 하지 않는 PR (예: 릴리즈 PR, 테스트 PR 등)은 무시하게 할 수 있다.
 
 ## 사용법
-해당 액션을 사용하기 위해서는 액션을 설정하는 설정 yaml, 및 Github Action 을 사용하기 위한 Github Workflow yaml 파일 총 2개의 파일을 준비해야 한다.
+해당 액션을 사용하기 위해서는 액션을 설정하는 설정 yaml, 및 Github Actions 을 사용하기 위한 Github Workflow yaml 파일 총 2개의 파일을 준비해야 한다.
 
 ```yaml{filename=".github/auto_assign.yml"}
 # Reviewer 자동 할당 설정

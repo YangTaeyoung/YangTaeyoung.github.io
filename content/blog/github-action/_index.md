@@ -1,4 +1,4 @@
 ---
-title: Github Action
+title: Github Actions
 type: blog
 ---

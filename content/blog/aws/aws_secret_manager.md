@@ -83,7 +83,7 @@ Github 에서도 레포지토리에서 사용하는 다양한 Secret을 관리�
    
 ## Steps
 ### Actions
-Github Action에서 Build시 아규먼트를 변경합니다.
+Github Actions에서 Build시 아규먼트를 변경합니다.
 ```yaml
       - name: Build and push
         uses: docker/build-push-action@v2

@@ -1,5 +1,5 @@
 ---
-title: (Github Action) Self-Hosted Runner 실패 시 Github Runner로 대신 실행하기
+title: (Github Actions) Self-Hosted Runner 실패 시 Github Runner로 대신 실행하기
 type: blog
 date: 2024-10-21
 comments: true
@@ -7,10 +7,10 @@ comments: true
 
 ![Image](/images/github_action/self-hosted-online-checker-1729507848686.png)
 
-최근 회사에서 기존에 사용하고 있던 Jenkins CI/CD를 Github Action으로 전환하면서, Self-Hosted Runner를 사용하게 되었다.
+최근 회사에서 기존에 사용하고 있던 Jenkins CI/CD를 Github Actions으로 전환하면서, Self-Hosted Runner를 사용하게 되었다.
 
 ## Self-Hosted Runner?
-[Self-Hosted Runner](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners)는 이름에서 알 수 있듯이, 자체 호스팅 된 러너를 의미한다. Github Action을 실행할 때, Github에서 제공하는 Runner를 사용하는 것이 아니라, 사용자가 직접 호스팅한 머신을 사용하는 것이다.
+[Self-Hosted Runner](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners)는 이름에서 알 수 있듯이, 자체 호스팅 된 러너를 의미한다. Github Actions을 실행할 때, Github에서 제공하는 Runner를 사용하는 것이 아니라, 사용자가 직접 호스팅한 머신을 사용하는 것이다.
 
 사용자의 컴퓨터를 직접 사용하는 것이기 때문에, 환경적인 제약이나, 캐시 등으로 인한 문제가 종종 발생할 수는 있지만, Github Runner에 비해 빠르고, (전기세를 제외하면) 무료로 사용할 수 있다는 장점이 있다.
 
@@ -25,7 +25,7 @@ comments: true
 기존에 회사에 있는 장비를 사용하기도 좋고, 젠킨스의 경우 AWS EC2 인스턴스를 사용하고 있었는데, EC2 인스턴스 대비 저렴하면서(전기세), 훨씬 성능이 좋다는 것에 있었다. (또한 세팅 역시 편하다)
 > 회사에 남는 장비가 없다면 전혀 다른 얘기일 것이다. 우리 회사는 기본적으로 빌드 러너에 사용할 만한 남는 머신이 있었기에 이런 선택을 했다. 실무에서는 Github에서 제공하는 높은 스펙의 러너를 사용하는 것과 컴퓨터 구매 비용을 비교해보는 것이 선행되어야 할 것이다.
 
-물론 Jenkins에 Self-Hosted Runner를 다는 방법도 있지만, 고정적인 머신의 개수를 지정해야 하는 등의 제약이 있었고, 동적으로 늘리고 줄일 수 있는 Github Action을 선택하게 되었다.
+물론 Jenkins에 Self-Hosted Runner를 다는 방법도 있지만, 고정적인 머신의 개수를 지정해야 하는 등의 제약이 있었고, 동적으로 늘리고 줄일 수 있는 Github Actions을 선택하게 되었다.
 
 ### 문제점
 문제는 Self-Hosted Runner가 항상 정상동작을 하지 않는다는 점에 있다. 물론, Github Runner도 그런 부분이 있겠지만, 회사에서 직접 관리하는 머신이니 만큼, 랜선 노후화 등으로 인해 종종 머신이 죽어버리는 경우가 종종 발생한다.
@@ -36,7 +36,7 @@ comments: true
 그래서, 이런 문제를 해결하기 위해, Self-Hosted Runner가 죽어있을 때, Github Runner로 대신 실행하도록 하는 Fail over 방법을 찾아보았다.
 
 ## 난관
-문제는 Github Action은 공식적으로 Self-Hosted Runner가 모종의 이유로 오프라인 상태일 때 Github Runner로 대신 실행하는 기능을 제공하지 않는다는 것이다.
+문제는 Github Actions은 공식적으로 Self-Hosted Runner가 모종의 이유로 오프라인 상태일 때 Github Runner로 대신 실행하는 기능을 제공하지 않는다는 것이다.
 > 러너 그룹을 여러개 묶어서 동시에 실행할 수 있는 기능은 지원한다. 단, 결국 동시 실행일 뿐이기에 많이 사용한다면, 사용하지도 않은 러너에 대한 비용을 지불해야 할 것이다. (특히나 기본 러너는 오래 걸리기에, 시간으로 인한 비용도 비쌀 것이다.)
 
 ## 해결책

@@ -1,5 +1,5 @@
 ---
-title: AWS ECS 서비스를 Github Action을 통해 자동으로 시작하고 종료하기
+title: AWS ECS 서비스를 Github Actions을 통해 자동으로 시작하고 종료하기
 type: blog
 date: 2023-10-18
 comments: true
@@ -37,12 +37,12 @@ ECS 비용이 별건 아니지만, 그래도 의미없게 유지할 필요는 �
     ```
 
 
-## Github Action
-Github Action은 Github에서 제공하는 CI/CD 서비스이다. Github에서 제공하는 다양한 Action을 통해 CI/CD를 구성할 수 있다.
+## Github Actions
+Github Actions은 Github에서 제공하는 CI/CD 서비스이다. Github에서 제공하는 다양한 Action을 통해 CI/CD를 구성할 수 있다.
 
-강력한 장점 중 하나는 Github Secrets인데, Github에서 제공하는 비밀 키 관리 시스템이다. Github Action을 통해 배포할 때, Github Secrets에 저장된 비밀 키를 사용할 수 있다.
+강력한 장점 중 하나는 Github Secrets인데, Github에서 제공하는 비밀 키 관리 시스템이다. Github Actions을 통해 배포할 때, Github Secrets에 저장된 비밀 키를 사용할 수 있다.
 
-해당 기능을 통해 앞서 말했던 AWS Access Key와 Secret Key를 직접 입력하지 않고, Github Secrets를 통해 등록하여 Github Action에서 활용할 수 있었다.
+해당 기능을 통해 앞서 말했던 AWS Access Key와 Secret Key를 직접 입력하지 않고, Github Secrets를 통해 등록하여 Github Actions에서 활용할 수 있었다.
 
 ### Steps
 1. Github Secrets에 AWS Access Key와 Secret Key를 등록한다. 
@@ -112,7 +112,7 @@ Github Action은 Github에서 제공하는 CI/CD 서비스이다. Github에서 �
 
 ![image](/images/aws/ecs_start_and_stop_with_github_action-1697562816389.png)
 
-각 `yaml` 파일에서 `on`을 `workflow_dispatch`로 설정한 이유는 Github Action을 수동으로 실행하기 위함이다.
+각 `yaml` 파일에서 `on`을 `workflow_dispatch`로 설정한 이유는 Github Actions을 수동으로 실행하기 위함이다.
 
 ![image](/images/aws/ecs_start_and_stop_with_github_action-1697562773679.png)
 
@@ -121,7 +121,7 @@ Github Action은 Github에서 제공하는 CI/CD 서비스이다. Github에서 �
 ![image](/images/aws/ecs_start_and_stop_with_github_action-1697562727292.png)
 
 ## Summary
-Github Action을 통해 ECS 서비스를 시작하고 종료하는 방법을 알아보았다. Github Action을 통해 AWS ECS를 배포하는 것은 추후에 다루도록 하겠다.
+Github Action을 통해 ECS 서비스를 시작하고 종료하는 방법을 알아보았다. Github Actions을 통해 AWS ECS를 배포하는 것은 추후에 다루도록 하겠다.
 
 ![image](/images/aws/ecs_start_and_stop_with_github_action-1697562898329.png)
 
