@@ -18,6 +18,32 @@ date: 2022-07-13
 > 2024-04 ~ 현재
  
 <img src="https://img.shields.io/badge/SPRING-6DB33F?style=for-the-badge&logo=Spring&logoColor=white" alt="spring" style="display: inline">
+<img src="https://img.shields.io/badge/JAVA-000000?style=for-the-badge&logo=openjdk&logoColor=white" alt="java" style="display: inline">
+<img src="https://img.shields.io/badge/MYSQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="mysql" style="display: inline">
+<img src="https://img.shields.io/badge/GRAFANA-F46800?style=for-the-badge&logo=Grafana&logoColor=white" alt="grafana" style="display: inline">
+<img src="https://img.shields.io/badge/PROMETHEUS-E6522C?style=for-the-badge&logo=Prometheus&logoColor=white" alt="prometheus" style="display: inline">
+<img src="https://img.shields.io/badge/AWS%20SQS-FF4F8B?style=for-the-badge&logo=amazonsqs&logoColor=white" alt="prometheus" style="display: inline">
+<img src="https://img.shields.io/badge/REDIS-FF4438?style=for-the-badge&logo=redis&logoColor=white" alt="prometheus" style="display: inline">
+
+{{% details title="More" closed="true" %}}
+
+#### Energy Shares US
+- 신재생 에너지 투자 크라우드 펀딩 투자 플랫폼 Energy Shares US의 서버, 백오피스 유지보수 및 신규 기능 개발을 담당하였습니다.
+- Spring Boot를 사용하여 REST API를 구현하였으며, MySQL을 사용하여 데이터를 저장하였습니다.
+- Github Actions > ECR > Event Bridge > ECS 로 이어지는 배포 CI/CD 파이프라인을 구축하였습니다.
+- 테스트 관련 신뢰성을 향상시키고 실행 시간을 최적화 하였습니다.
+  - Testcontainers를 통해 Repository Test를 추가하여 쿼리에 대한 신뢰성을 향상시켰습니다.
+  - 테스트 시간을 최적화하기 위해 `@SpringBootTest`를 `@WebMvcTest`와 `DataJpaTest`로 분리하여 실행시간을 3분의 1로 최적화하였습니다.
+  - Self-Hosted Runner를 도입하여 실행시간을 최적화하고, [Self-Hosted Runner가 다운되었을 때 Failover를 위한 대비책을 마련](/blog/github-action/self-hosted-online-checker/)하였습니다.
+- Grafana Tempo를 활용한 분산 추적 시스템을 구축하였습니다.
+- 로깅 필드에 [TraceID, SpanID를 부여하여 로그 추적이 용이](/blog/spring/trace-id-and-span-id-logging/)하게 변경하고, [로깅 포맷을 JSON으로 변경함](/blog/spring/logback_json/)으로써 검색 플랫폼에서 좀 더 검색이 용이하도록 개선하였습니다. 
+- 배포 시 [환경 설정이 누락되는 문제를 해결하기 위해 설정 파일 비교 도구를 개발](/blog/trouble-shooting/config-differ-check/)하였습니다.
+- Locust를 활용하여 부하 테스트를 진행하여 서버 적정 스펙을 정의하고, 성능상의 문제를 찾아 개선하였습니다.
+  - 외부 플랫폼으로 인해 응답이 느려지는 케이스를 AWS SQS를 활용하여 비동기 처리하고 성능을 개선하였습니다.
+  - Redis를 활용하여 반응이 늦은 API 응답을 캐시하여 부하를 낮추었습니다.
+-  Prometheus를 활용하여 모니터링을 진행하였습니다.
+
+{{% /details %}}
 
 ### (주)룩코 - 백엔드 엔지니어 재직
 > 2022-08 ~ 2024-04
