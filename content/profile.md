@@ -5,18 +5,31 @@ date: 2022-07-13
 ---
 
 
-
 <img src="/images/profile/profile.jpg" width="500"> 
 
 안녕하세요. _"편리한 세상을 위한 불편한 개발자"_ **양태영**입니다
+주변에 있는 불편한 것을 개선하고, 편리하게 개선하는 것을 좋아합니다 :)
+
+## 📚 Skills
+
+|    Category    | Skills                                                |
+|:--------------:|-------------------------------------------------------|
+|    Backend     | Java, Spring Boot, Go, Echo Framework, Python, Django |
+|    Frontend    | Javascript, Typescript, React                         |
+|    Database    | MySQL, PostgreSQL, MongoDB, Redis, Elasticsearch      |
+| Message Queue  | AWS SQS, RabbitMQ                                     |
+|     DevOps     | Docker, AWS, Github Actions                           |
+|      IDE       | IntelliJ, Goland, PyCharm                             |
+|      Etc       | Git, Github, Jira, Confluence, Notion                 |
 
 ## 📃 Careers
 
 {{% steps %}}
 
 ### (유)일루미나리안 - 백엔드 엔지니어 재직
+
 > 2024-04 ~ 현재
- 
+
 <img src="https://img.shields.io/badge/SPRING-6DB33F?style=for-the-badge&logo=Spring&logoColor=white" alt="spring" style="display: inline">
 <img src="https://img.shields.io/badge/JAVA-000000?style=for-the-badge&logo=openjdk&logoColor=white" alt="java" style="display: inline">
 <img src="https://img.shields.io/badge/MYSQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="mysql" style="display: inline">
@@ -28,24 +41,28 @@ date: 2022-07-13
 {{% details title="More" closed="true" %}}
 
 #### Energy Shares US
+
 - 신재생 에너지 투자 크라우드 펀딩 투자 플랫폼 Energy Shares US의 서버, 백오피스 유지보수 및 신규 기능 개발을 담당하였습니다.
 - Spring Boot를 사용하여 REST API를 구현하였으며, MySQL을 사용하여 데이터를 저장하였습니다.
 - Github Actions > ECR > Event Bridge > ECS 로 이어지는 배포 CI/CD 파이프라인을 구축하였습니다.
 - 테스트 관련 신뢰성을 향상시키고 실행 시간을 최적화 하였습니다.
-  - Testcontainers를 통해 Repository Test를 추가하여 쿼리에 대한 신뢰성을 향상시켰습니다.
-  - 테스트 시간을 최적화하기 위해 `@SpringBootTest`를 `@WebMvcTest`와 `DataJpaTest`로 분리하여 실행시간을 3분의 1로 최적화하였습니다.
-  - Self-Hosted Runner를 도입하여 실행시간을 최적화하고, [Self-Hosted Runner가 다운되었을 때 Failover를 위한 대비책을 마련](/blog/github-action/self-hosted-online-checker/)하였습니다.
+    - Testcontainers를 통해 Repository Test를 추가하여 쿼리에 대한 신뢰성을 향상시켰습니다.
+    - 테스트 시간을 최적화하기 위해 `@SpringBootTest`를 `@WebMvcTest`와 `DataJpaTest`로 분리하여 실행시간을 3분의 1로 최적화하였습니다.
+    - Self-Hosted Runner를 도입하여 실행시간을
+      최적화하고, [Self-Hosted Runner가 다운되었을 때 Failover를 위한 대비책을 마련](/blog/github-action/self-hosted-online-checker/)하였습니다.
 - Grafana Tempo를 활용한 분산 추적 시스템을 구축하였습니다.
-- 로깅 필드에 [TraceID, SpanID를 부여하여 로그 추적이 용이](/blog/spring/trace-id-and-span-id-logging/)하게 변경하고, [로깅 포맷을 JSON으로 변경함](/blog/spring/logback_json/)으로써 검색 플랫폼에서 좀 더 검색이 용이하도록 개선하였습니다. 
+- 로깅 필드에 [TraceID, SpanID를 부여하여 로그 추적이 용이](/blog/spring/trace-id-and-span-id-logging/)하게
+  변경하고, [로깅 포맷을 JSON으로 변경함](/blog/spring/logback_json/)으로써 검색 플랫폼에서 좀 더 검색이 용이하도록 개선하였습니다.
 - 배포 시 [환경 설정이 누락되는 문제를 해결하기 위해 설정 파일 비교 도구를 개발](/blog/trouble-shooting/config-differ-check/)하였습니다.
 - Locust를 활용하여 부하 테스트를 진행하여 서버 적정 스펙을 정의하고, 성능상의 문제를 찾아 개선하였습니다.
-  - 외부 플랫폼으로 인해 응답이 느려지는 케이스를 AWS SQS를 활용하여 비동기 처리하고 성능을 개선하였습니다.
-  - Redis를 활용하여 반응이 늦은 API 응답을 캐시하여 부하를 낮추었습니다.
--  Prometheus를 활용하여 모니터링을 진행하였습니다.
+    - 외부 플랫폼으로 인해 응답이 느려지는 케이스를 AWS SQS를 활용하여 비동기 처리하고 성능을 개선하였습니다.
+    - Redis를 활용하여 반응이 늦은 API 응답을 캐시하여 부하를 낮추었습니다.
+- Prometheus를 활용하여 모니터링을 진행하였습니다.
 
 {{% /details %}}
 
 ### (주)룩코 - 백엔드 엔지니어 재직
+
 > 2022-08 ~ 2024-04
 
 <img src="https://img.shields.io/badge/GO-00ADD8?style=for-the-badge&logo=Go&logoColor=white" alt="go" style="display: inline">
@@ -65,20 +82,22 @@ date: 2022-07-13
 {{% details title="More" closed="true" %}}
 
 #### 에이클로젯
+
 - 40만 MAU를 받아내는 에이클로젯 서비스에 API, 배치, 서버 유지보수를 담당하였습니다.
 - 중고 거래의 기초 데이터 설계 및 관련 API를 구현하였습니다.
 
 #### Looko AI
+
 - 중고 빈티지 의류 사업자의 작업 효율을 높이기 위한 서비스 [Looko AI](https://business.acloset.net)의 백엔드를 구축하였습니다.
 - Golang 의 Echo 프레임워크를 사용하였고, MongoDB를 사용하여 데이터를 저장하였습니다.
-- 3개의 멀티소스 (에이클로젯, 카페24, 네이버 스마트 스토어)의 주문/상품/클레임에 대한 서비스 상태를 [FSM](https://github.com/looplab/fsm)을 통해 Looko AI와 동기화 하고, 30만건의 상품, 5만건의 주문의 상태를 실시간 동기화 처리한 경험이 있습니다.
+- 3개의 멀티소스 (에이클로젯, 카페24, 네이버 스마트 스토어)의 주문/상품/클레임에 대한 서비스 상태를 [FSM](https://github.com/looplab/fsm)을 통해 Looko AI와 동기화 하고,
+  30만건의 상품, 5만건의 주문의 상태를 실시간 동기화 처리한 경험이 있습니다.
 - AWS Lambda, Event Bridge 를 사용하여 각 플랫폼의 토큰을 리프레시하는 서비리스 함수를 구축한 경험이 있습니다.
 
 {{% /details %}}
 
-
-
 ### (주)투디지트 - 백엔드 엔지니어 재직
+
 <img src="https://img.shields.io/badge/DJANGO-092E20?style=for-the-badge&logo=Django&logoColor=white" alt="django" style="display: inline">
 <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=Python&logoColor=white" alt="python" style="display: inline">
 <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black" alt="javascript" style="display: inline">
@@ -95,14 +114,14 @@ date: 2022-07-13
 
 {{% /details %}}
 
-
 {{% /steps %}}
 
 ## 📚 Projects & Activities
 
-{{% steps %}} 
+{{% steps %}}
 
 ### 개발자를 위한 블로그 플랫폼 "Plog" 개발 팀장
+
 > 2022-07 ~ 2023-11
 
 <img src="https://img.shields.io/badge/SPRING-6DB33F?style=for-the-badge&logo=Spring&logoColor=white" alt="spring" style="display: inline">
@@ -125,7 +144,8 @@ date: 2022-07-13
 {{% details title="More" closed="true" %}}
 
 - 공부를 목적으로 개발자를 위한 블로그 플랫폼 "Plog"의 팀장으로 개발을 리딩하였습니다.
-- 매주 회의를 통해 진행사항을 확인하고 [Github Discussion](https://github.com/project-555/.github/discussions?discussions_q=)을 활용하여 기록을 남겨두었습니다.
+- 매주 회의를 통해 진행사항을 확인하고 [Github Discussion](https://github.com/project-555/.github/discussions?discussions_q=)을 활용하여 기록을
+  남겨두었습니다.
 - Spring Boot를 사용하여 REST API를 구현하였으며, PostgreSQL을 사용하여 메인 데이터를 저장하였습니다.
 - Redis를 이용하여 API 캐싱, 이메일 인증을 구현하였습니다.
 - Github Actions > ECR > ECS 로 이어지는 배포 CI/CD 파이프라인을 구축하였습니다.
@@ -137,6 +157,7 @@ date: 2022-07-13
 {{% /details %}}
 
 ### 알고리즘 사내 스터디장
+
 <img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=GitHub&logoColor=white" alt="github" style="display: inline">
 <img src="https://img.shields.io/badge/ALGORITHM-008000?style=for-the-badge&logo=Algorithm&logoColor=white" alt="algorithm" style="display: inline">
 
@@ -150,8 +171,8 @@ date: 2022-07-13
 
 {{% /details %}}
 
-
 ### 파이썬 클린코드 사내 스터디장
+
 <img src="https://img.shields.io/badge/WIKIDOCS-56A5EB?style=for-the-badge&logo=Wikidocs&logoColor=white" alt="wikidocs" style="display: inline">
 <img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=GitHub&logoColor=white" alt="github" style="display: inline">
 
@@ -171,6 +192,7 @@ date: 2022-07-13
 {{% /details %}}
 
 ### 쇼핑몰 텍스트에서 Python 모델명 추출 모델을 통한 사용자 보증기간 관리 API 개발
+
 <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=Python&logoColor=white" alt="python" style="display: inline">
 <img src="https://img.shields.io/badge/MARIADB-003545?style=for-the-badge&logo=MariaDB&logoColor=white" alt="mariadb" style="display: inline">
 <img src="https://img.shields.io/badge/SPRING-6DB33F?style=for-the-badge&logo=Spring&logoColor=white" alt="spring" style="display: inline">
@@ -189,11 +211,13 @@ date: 2022-07-13
 - 여러가지 제품의 모델명과 보증기간을 한번에 관리하는 플랫폼을 개발하기 위해 해당 프로젝트를 진행하였습니다.
 - 쇼핑몰 텍스트에서 Python 모델명 추출을 통한 사용자 보증기간 관리 API를 개발하였습니다.
 - 해당 프로젝트에 실제 구현은 해당 [Github](https://github.com/MaPDuck)에서 확인하실 수 있습니다.
-- 해당 프로젝트에 대한 상세한 내용은 해당 [Notion](https://gossamer-liver-d26.notion.site/MaPDuck-3e842cb9f60c4dfe878a97c3506ef2ae)에서 확인하실 수 있습니다.
+- 해당 프로젝트에 대한 상세한 내용은 해당 [Notion](https://gossamer-liver-d26.notion.site/MaPDuck-3e842cb9f60c4dfe878a97c3506ef2ae)에서
+  확인하실 수 있습니다.
 
 {{% /details %}}
 
 ### 인하대학교 빅데이터 동아리 [IBAS](https://www.inhabas.com) 파이썬 기초 강의자
+
 <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=Python&logoColor=white" alt="python" style="display: inline">
 <img src="https://img.shields.io/badge/YOUTUBE-FF0000?style=for-the-badge&logo=YouTube&logoColor=white" alt="youtube" style="display: inline">
 
@@ -208,6 +232,7 @@ date: 2022-07-13
 {{% /details %}}
 
 ### 인하대학교 빅데이터 동아리 [IBAS](https://www.inhabas.com) 웹사이트 제작 프로젝트 팀장
+
 <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=Python&logoColor=white" alt="python" style="display: inline">
 <img src="https://img.shields.io/badge/DJANGO-092E20?style=for-the-badge&logo=Django&logoColor=white" alt="django" style="display: inline">
 <img src="https://img.shields.io/badge/MARIADB-003545?style=for-the-badge&logo=MariaDB&logoColor=white" alt="mariadb" style="display: inline">
@@ -224,7 +249,6 @@ date: 2022-07-13
 {{< card link="https://www.inhabas.com" title="IBAS">}}
 {{< /cards >}}
 
-
 {{% details title="More" closed="true" %}}
 
 - 전반적인 백엔드 아키텍처 구성을 담당하였으며, Django로 MTV(Model, View, Template) 패턴을 사용하여 개발하였습니다.
@@ -236,6 +260,7 @@ date: 2022-07-13
 {{% /details %}}
 
 ### 한이음 ICT 멘토링 참여
+
 <img src="https://img.shields.io/badge/SPRING-6DB33F?style=for-the-badge&logo=Spring&logoColor=white" alt="spring" style="display: inline">
 <img src="https://img.shields.io/badge/HADOOP-FF7F00?style=for-the-badge&logo=Apache-Hadoop&logoColor=white" alt="hadoop" style="display: inline">
 <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black" alt="javascript" style="display: inline">
