@@ -5,7 +5,7 @@ date: 2022-07-13
 ---
 
 
-<img src="/images/profile/profile.jpg" width="500"> 
+<img src="/images/profile/profile.jpg" width="500" style="border-radius: 50%"> 
 
 안녕하세요. _"편리한 세상을 위한 불편한 개발자"_ **양태영**입니다
 
