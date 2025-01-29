@@ -94,7 +94,7 @@ func StartEc2Handler(w http.ResponseWriter, r *http.Request) {
 2. 배포, 천재지변 등의 이유로 작업이 중단되는 경우, 복구가 어려우며, 사용자에게는 알림이 가지 않는다.
 3. 자사 서비스가 아닌 외부 서비스 API인 경우 일반적으로 Rate Limit이 존재하며, 요청이 몰리는 경우, 429 Too Many Requests를 외부 서비스에서 제대로 작업이 처리되지 않을 수 있다.
 
-### 해결 2. 이벤트 기반 아키텍처(Event Driven Architecture)로 처리하기
+## 해결 2. 이벤트 기반 아키텍처(Event Driven Architecture)로 처리하기
 이벤트 기반 아키텍처는 말 그대로 이벤트를 기반으로 작업을 처리하는 아키텍처를 의미한다.
 
 ![image](/images/web/eda-1737715876115.png)
