@@ -1,4 +1,4 @@
----l
+---
 title: Singleflight로 중복 요청에도 강한 서버 만들기
 type: blog
 date: 2025-02-10
