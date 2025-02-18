@@ -1,7 +1,9 @@
 # Hugo configuration file
 title: 코드기린
 
-theme: hextra
+module:
+  imports:
+    - path: github.com/imfing/hextra
 
 markup:
   # allow raw html
@@ -55,8 +57,8 @@ params:
     displayLogo: false
 
   footer:
-    displayCopyright: false
-    displayPoweredBy: true
+    displayCopyright: true
+    displayPoweredBy: false
 
   editURL:
     enable: true
@@ -65,7 +67,6 @@ params:
   comments:
     enable: false
     type: giscus
-
     giscus:
       repo: YangTaeyoung/YangTaeyoung.github.io
       repoId: R_kgDOG5jP0g
