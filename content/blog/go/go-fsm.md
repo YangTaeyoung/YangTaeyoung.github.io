@@ -334,6 +334,9 @@ stateDiagram-v2
 
 방대한 if문을 명확한 `Src`와 `Dst` 정의를 통해 상태의 전이를 표현하고, 행동들을 `Callbacks`으로 정의하므로써 코드의 가독성과 유지보수성을 높이고, 상태가 많은 상태에서도 복잡도를 낮출 수 있다.
 
+## Full Code
+- [Github](https://github.com/YangTaeyoung/go-fsm-demo)
+
 ## Reference
 - https://github.com/looplab/fsm
 - https://ko.wikipedia.org/wiki/%EC%9C%A0%ED%95%9C_%EC%83%81%ED%83%9C_%EA%B8%B0%EA%B3%84
