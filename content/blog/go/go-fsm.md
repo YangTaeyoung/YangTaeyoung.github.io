@@ -1,5 +1,5 @@
 ---
-title: (Golang) 상태를 좀 더 효율적으로, 유한 상태 기계(FSM)에 대해 알아보자
+title: FSM과 함께 상태를 좀 더 효율적으로 관리해보자 with Golang
 type: blog
 date: 2025-02-22
 comments: true

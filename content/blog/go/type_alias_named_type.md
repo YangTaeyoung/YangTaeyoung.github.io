@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Golang 의 Type Alias 와 Named Type에 대해 알아보자
+title: Type Alias와 Named Type의 차이에 대해 알아보기 (Golang)
 date: 2023-10-13
 comments: true
 ---
