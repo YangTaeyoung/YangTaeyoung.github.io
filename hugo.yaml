@@ -33,7 +33,7 @@ markup:
   highlight:
     noClasses: false
 
-enableRobotsTXT: false
+enableRobotsTXT: true
 
 menu:
   main:
@@ -75,7 +75,7 @@ params:
     displayLogo: false
 
   footer:
-    displayCopyright: true
+    displayCopyright: false
     displayPoweredBy: false
 
   editURL:
@@ -96,3 +96,6 @@ services:
     ID: G-Q7QBB1SGG3
 
 timeZone: Asia/Seoul
+
+sitemap:
+  changeFreq: monthly
