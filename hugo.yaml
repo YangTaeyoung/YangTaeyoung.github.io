@@ -98,4 +98,4 @@ services:
 timeZone: Asia/Seoul
 
 sitemap:
-  changeFreq: monthly
+  changeFreq: hourly
