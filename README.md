@@ -6,4 +6,4 @@
 
 블로그 엔진으로는 Golang의 Hugo를 사용하였으며, Github Pages를 통해 호스팅하고 있습니다.
 
-블로그 바로가기: [https://yangtaeyoung.github.io/](https://yangtaeyoung.github.io/)
+블로그 바로가기: https://www.code-kirin.me
