@@ -17,4 +17,5 @@ type: docs
   {{< card link="spring" title="Spring" icon="star">}}
   {{< card link="github-action" title="Github Actions" icon="star">}}
   {{< card link="trouble-shooting" title="Trouble Shooting" icon="star">}}
-{{< /cards >}}
+  {{< card link="ide" title="IDE" icon="star">}}
+{{< /cards >}} 
