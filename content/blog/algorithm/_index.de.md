@@ -1,5 +1,5 @@
 ---
-title: Spring
+title: Algorithmus
 type: blog
 translated: true
 ---

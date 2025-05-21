@@ -18,4 +18,5 @@ type: docs
   {{< card link="github-action" title="Github Actions" icon="star">}}
   {{< card link="trouble-shooting" title="Trouble Shooting" icon="star">}}
   {{< card link="ide" title="IDE" icon="star">}}
+  {{< card link="algorithm" title="알고리즘" icon="star">}}
 {{< /cards >}} 

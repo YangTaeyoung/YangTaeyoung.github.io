@@ -19,4 +19,5 @@ translated: true
   {{< card link="github-action" title="Github Actions" icon="star">}}
   {{< card link="trouble-shooting" title="トラブルシューティング" icon="star">}}
   {{< card link="ide" title="IDE" icon="star">}}
+  {{< card link="algorithm" title="アルゴリズム" icon="star">}}
 {{< /cards >}}
