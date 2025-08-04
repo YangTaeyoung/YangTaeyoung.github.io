@@ -275,8 +275,14 @@ This XML file does not appear to have any style information associated with it. 
 - Google Search Console: https://search.google.com/search-console
 - Naver Search Advisor: https://searchadvisor.naver.com/
 
+## AEO/GEO/SEO 최적화를 쉽게 하려면?
+AEO/GEO 최적화가 너무 어렵다면, 적절한 도구를 사용할 수 있다. 필자가 현재 몸담고 있는 [체인시프트](https://www.chainshift.co/)에서는 AEO/GEO 관련 모니터링 뿐 아니라, 최적화된 콘텐츠를 생성하는 도구를 제공하고 있으니 관심이 있다면 한번 사용해 보길 바란다.
+
+특히 모니터링의 경우, 기존 다른 조직이 API기반으로 답변하는 것에 비해 실제 사용하는 서비스를 RPA기반으로 수집하기 때문에, 다른 업체 대비 실제와 가까운 데이터를 제공하는 것에 큰 이점이 있다.
+
 ## Reference
 - [Google Search Central - Overview of Google crawlers and fetchers (user agents)](https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers)
 - [Google Search Central - Sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps)
 - [SearchPilot - JSON–LD vs Microdata Revisited](https://www.searchpilot.com/resources/case-studies/json-versus-microdata-in-2024)
 - [Medium - How JSON-LD is different than Schema or RDF or Microdata](https://medium.com/@HuntingHate/how-json-ld-is-different-than-schema-or-rdf-or-microdata-b6e3759ccd35)
+
